@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-PrinterSDK" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PrinterSDK</name>
+    <js-module name="PrinterSDK" src="www/PrinterSDK.js">
+        <clobbers target="cordova.plugins.PrinterSDK" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PrinterSDK">
+                <param name="ios-package" value="PrinterSDK" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PrinterSDK.m" />
+        <source-file src="src/ios/libPrinterSDK.a" />
+        <source-file src="src/ios/PrinterSDK.h" />
+    </platform>
+</plugin>

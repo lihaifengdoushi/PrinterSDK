@@ -1,0 +1,17 @@
+{
+  "name": "printersdk",
+  "version": "0.0.1",
+  "description": "A plugin for bluetooth printer",
+  "cordova": {
+    "id": "cordova-plugin-PrinterSDK",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Desarrollo WACH",
+  "license": "ISC"
+}
